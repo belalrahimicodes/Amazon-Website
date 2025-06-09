@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*------------------------------Navbar------------------------------*/
+nav{
+    background-color: rgb(3, 3, 40);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 12px 22px;
+}
+nav .deliveryLocation{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 10px;
+}
+nav .deliveryLocation img{
+    margin: 5px;
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background: white;
+    color: silver;
+    max-width: 900px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.allSearch{
+    display: flex;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+    background: rgb(186, 186, 186);
+    padding: 13px 10px;
+    gap: 6px;   
+    color: rgb(59, 58, 58);
+}
+.allSearch img{
+    width: 10px;
+}
+#search-input{
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    width: 100%;
+}
+#search-image{
+    max-width: 40px;
+    padding: 8px 6px;
+    background: rgb(255, 205, 112);
+    border-radius: 0 3px 3px 0;
+}
+.languageBar{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.signIn{
+    align-items: center;
+    padding: 3px;
+    margin-left: 10px;
+}
+.signIn p{
+    font-size: 12px;
+}
+.signIn h2{
+    font-size: 17px;
+}
+.signIn h2 img{
+    padding-left: 2px;
+    margin-left: 4px;
+}
+.returnOder{
+    margin-left: 10px;
+}
+.returnOder p{
+    font-size: 12px;
+}
+.returnOder h2{
+    font-size: 17px;
+}
+.shoppingCart{
+    display: flex;
+    align-items: center;
+}
+.shoppingCart img{
+    width: 40px;
+    margin-left: 15px;
+}
+.shoppingCart h2{
+    margin-top: 20px;
+    font-size: 15px;
+}
