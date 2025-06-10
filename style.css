@@ -7,6 +7,9 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    background: rgb(211, 210, 210);
+}
 /*------------------------------Navbar------------------------------*/
 nav{
     background-color: rgb(2, 2, 46);
@@ -163,48 +166,27 @@ nav .deliveryLocation img{
     position: absolute;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: -22%;
-    gap: 20px;
-    
+    flex-wrap: nowrap;
+    row-gap: 10px;
+    min-width: 0;
+    max-width: 100%;
 }
 .itemCards a{
-    margin-top: 25%;
+    margin-top: 2%;
     text-decoration: none;
     color: rgb(9, 115, 150);
 }
-.card1{
-    display: block;
+.card1, .card2, .card3, .card4{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    max-width: 25%;
+    margin: 10px;
+    box-sizing: border-box;
     background: white;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 20px;
-    border: 3px solid black;
-    
-}
-.card1 h2{
-    margin-bottom: 2%;
-}
-.card1Images{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.card1Images p{
-    margin: 4px;
-}
-.card2{
-    display: block;
-    background: white;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 20px;
-}
-.card2 h2{
-    margin-bottom: 2%;
-}
-.card2 img{
-    margin: 4px;  
-    margin-bottom: 20px;  
+    padding: 10px 15px;
 }
