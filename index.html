@@ -12,18 +12,12 @@
   </head>
   <body>
     <!-----------------------------Navbar-------------------------------->
-    <nav>
-      <div class="logo">
-        <a href="#"
-          ><img src="assets/logo.png" alt="logo image" width="100px"
-        /></a>
+    <nav class="navbar">
+      <div class="logo" id="logo">
+        <a href="#"><img src="assets/logo.png" alt="logo image" width="100px"/></a>
       </div>
       <div class="deliveryLocation">
-        <img
-          width="20px"
-          src="assets/location_icon.png"
-          alt="deliveryLocation image"
-        />
+        <img width="20px" src="assets/location_icon.png" alt="deliveryLocation image"/>
         <div>
           <p>Deliver to</p>
           <h2>Switzerland</h2>
@@ -38,29 +32,13 @@
         <img src="assets/search_icon.png" id="search-image" alt="" />
       </div>
       <div class="languageBar">
-        <img
-          width="30px"
-          src="assets/us_flag.png"
-          style="margin-right: 2px"
-          alt=""
-        />
-        <h2>
-          EN<img
-            width="10px"
-            src="assets/dropdown_icon.png"
-            style="margin-left: 2px"
-            alt=""
-          />
+        <img width="30px" src="assets/us_flag.png" style="margin-right: 2px" alt=""/>
+        <h2>EN<img width="10px" src="assets/dropdown_icon.png" style="margin-left: 2px" alt=""/>
         </h2>
       </div>
       <div class="signIn">
         <p>Hello, sign in</p>
-        <h2>
-          Account & Lists<img
-            width="13px"
-            src="assets/dropdown_icon.png"
-            alt=""
-          />
+        <h2>Account & Lists<img width="13px" src="assets/dropdown_icon.png" alt=""/>
         </h2>
       </div>
       <div class="returnOder">
@@ -89,10 +67,8 @@
     </div>
     <!--------------------------------Background-------------------------------->
     <div class="backgroundImage">
-      <a href="#" class="previousImage"
-        ><i class="fa-solid fa-left-long"></i
-      ></a>
-      <a href="#" class="nextImage"><i class="fa-solid fa-right-long"></i></a>
+      <a onclick="event.preventDefault();" href="#" class="previousImage"><i class="fa-solid fa-left-long"></i></a>
+      <a onclick="event.preventDefault();" href="#" class="nextImage"><i class="fa-solid fa-right-long"></i></a>
       <ul>
         <img class="bgImages" src="assets/background1.jpg" alt="" />
         <img class="bgImages" src="assets/background2.jpg" alt="" />
@@ -101,27 +77,216 @@
         <img class="bgImages" src="assets/background5.jpg" alt="" />
       </ul>
     </div>
-    <!---------------------------------Item Card---------------------------------------->
 
-    <div class="itemCards">
-      <div class="card1">
+    <!---------------------------------Item Card---------------------------------------->
+    <div class="itemCards firstCards">
+      <div class="card">
         <h2>Shop for your home essentials</h2>
         <img src="assets/item2.jpg" alt="" />
         <a href="#">Discover more in Home</a>
       </div>
-      <div class="card2">
+      <div class="card">
         <h2>Get your game on</h2>
         <img src="assets/item10.jpg" alt="" />
         <a href="#">Shop gaming</a>
       </div>
-      <div class="card3">
+      <div class="card">
         <h2>Top categories in kitchen appliances</h2>
         <img src="assets/item9.jpg" alt="" />
         <a href="#">Explore all products in kitchen</a>
       </div>
-      <div class="card4">
+      <div class="card">
         <h2>Shop fashion for less</h2>
         <img src="assets/item7.jpg" alt="" />
+        <a href="#">See all deals</a>
+      </div>
+    </div>
+    <div class="itemCards">
+      <div class="card">
+        <h2>New home arrivals under $50</h2>
+        <img src="assets/item13.jpg" alt="" />
+        <a href="#">Discover more in Home</a>
+      </div>
+      <div class="card">
+        <h2>Toys under $25</h2>
+        <img src="assets/item11.jpg" alt="" />
+        <a href="#">Shop gaming</a>
+      </div>
+      <div class="card">
+        <h2>Gifts for Dad under $25</h2>
+        <img src="assets/item8.jpg" alt="" />
+        <a href="#">Explore all products in kitchen</a>
+      </div>
+      <div class="card">
+        <h2>Refresh your space</h2>
+        <img src="assets/item1.jpg" alt="" />
+        <a href="#">See all deals</a>
+      </div>
+    </div>
+
+    <!---------------------------------Top Seller--------------------------------->
+    <div class="topSeller">
+      <a href="#" class="previousTopSeller"><i class="fa-solid fa-arrow-left"></i></a>
+      <a href="#" class="nextTopSeller"><i class="fa-solid fa-arrow-right"></i></a>
+      <h2>Top Sellers in Toys for you</h2>
+      <ul style="list-style-type: none;">
+        <li><img src="assets/topSeller1.jpg" alt=""></li>
+        <li><img src="assets/topSeller2.jpg" alt=""></li>
+        <li><img src="assets/topSeller4.jpg" alt=""></li>
+        <li><img src="assets/topSeller5.jpg" alt=""></li>
+        <li><img src="assets/topSeller7.jpg" alt=""></li>
+        <li><img src="assets/topSeller8.jpg" alt=""></li>
+        <li><img src="assets/topSeller9.jpg" alt=""></li>
+        <li><img src="assets/topSeller1.jpg" alt=""></li>
+        <li><img src="assets/topSeller2.jpg" alt=""></li>
+        <li><img src="assets/topSeller4.jpg" alt=""></li>
+      </ul>
+    </div>
+
+    <!---------------------------------Best Seller--------------------------------->
+    <div class="topSeller">
+      <a href="#" class="previousTopSeller"><i class="fa-solid fa-arrow-left"></i></a>
+      <a href="#" class="nextTopSeller"><i class="fa-solid fa-arrow-right"></i></a>
+      <h2>Popular products in PC internationally</h2>
+      <ul style="list-style-type: none;">
+        <li><img src="assets/topSeller2.jpg" alt=""></li>
+        <li><img src="assets/topSeller9.jpg" alt=""></li>
+        <li><img src="assets/topSeller8.jpg" alt=""></li>
+        <li><img src="assets/topSeller1.jpg" alt=""></li>
+        <li><img src="assets/topSeller7.jpg" alt=""></li>
+        <li><img src="assets/topSeller8.jpg" alt=""></li>
+        <li><img src="assets/topSeller1.jpg" alt=""></li>
+        <li><img src="assets/topSeller1.jpg" alt=""></li>
+        <li><img src="assets/topSeller9.jpg" alt=""></li>
+        <li><img src="assets/topSeller4.jpg" alt=""></li>
+      </ul>
+    </div>
+
+    <!---------------------------------Electronics--------------------------------->
+    <div class="itemCards">
+      <div class="card">
+        <h2>Have more fun with family</h2>
+        <img src="assets/item2.jpg" alt="" />
+        <a href="#">Discover more in Home</a>
+      </div>
+      <div class="card">
+        <h2>Wireless Tech</h2>
+        <img src="assets/item10.jpg" alt="" />
+        <a href="#">Shop gaming</a>
+      </div>
+      <div class="card">
+        <h2>Elevate your Electronics</h2>
+        <img src="assets/item9.jpg" alt="" />
+        <a href="#">Explore all products in kitchen</a>
+      </div>
+      <div class="card">
+        <h2>Level up your PC here</h2>
+        <img src="assets/item7.jpg" alt="" />
+        <a href="#">See all deals</a>
+      </div>
+    </div>
+
+    <!---------------------------------Best Seller in Toys--------------------------------->
+    <div class="topSeller">
+      <a href="#" class="previousTopSeller"><i class="fa-solid fa-arrow-left"></i></a>
+      <a href="#" class="nextTopSeller"><i class="fa-solid fa-arrow-right"></i></a>
+      <h2>Popular products in PC internationally</h2>
+      <ul style="list-style-type: none;">
+        <li><img src="assets/topSeller2.jpg" alt=""></li>
+        <li><img src="assets/topSeller9.jpg" alt=""></li>
+        <li><img src="assets/topSeller8.jpg" alt=""></li>
+        <li><img src="assets/topSeller1.jpg" alt=""></li>
+        <li><img src="assets/topSeller7.jpg" alt=""></li>
+        <li><img src="assets/topSeller8.jpg" alt=""></li>
+        <li><img src="assets/topSeller1.jpg" alt=""></li>
+        <li><img src="assets/topSeller1.jpg" alt=""></li>
+        <li><img src="assets/topSeller9.jpg" alt=""></li>
+        <li><img src="assets/topSeller4.jpg" alt=""></li>
+      </ul>
+    </div>
+
+    <!---------------------------------Best Seller in Books--------------------------------->
+    <div class="topSeller">
+      <a href="#" class="previousTopSeller"><i class="fa-solid fa-arrow-left"></i></a>
+      <a href="#" class="nextTopSeller"><i class="fa-solid fa-arrow-right"></i></a>
+      <h2>Popular products in PC internationally</h2>
+      <ul style="list-style-type: none;">
+        <li><img src="assets/topSeller2.jpg" alt=""></li>
+        <li><img src="assets/topSeller9.jpg" alt=""></li>
+        <li><img src="assets/topSeller8.jpg" alt=""></li>
+        <li><img src="assets/topSeller1.jpg" alt=""></li>
+        <li><img src="assets/topSeller7.jpg" alt=""></li>
+        <li><img src="assets/topSeller8.jpg" alt=""></li>
+        <li><img src="assets/topSeller1.jpg" alt=""></li>
+        <li><img src="assets/topSeller1.jpg" alt=""></li>
+        <li><img src="assets/topSeller9.jpg" alt=""></li>
+        <li><img src="assets/topSeller4.jpg" alt=""></li>
+      </ul>
+    </div>
+
+    <!---------------------------------Gaming Merchandise--------------------------------->
+    <div class="itemCards">
+      <div class="card">
+        <h2>New home arrivals under $50</h2>
+        <img src="assets/item13.jpg" alt="" />
+        <a href="#">Discover more in Home</a>
+      </div>
+      <div class="card">
+        <h2>Toys under $25</h2>
+        <img src="assets/item11.jpg" alt="" />
+        <a href="#">Shop gaming</a>
+      </div>
+      <div class="card">
+        <h2>Gifts for Dad under $25</h2>
+        <img src="assets/item8.jpg" alt="" />
+        <a href="#">Explore all products in kitchen</a>
+      </div>
+      <div class="card">
+        <h2>Refresh your space</h2>
+        <img src="assets/item1.jpg" alt="" />
+        <a href="#">See all deals</a>
+      </div>
+    </div>
+
+    <!------------------------------------Popular Products-------------------------------->
+    <div class="topSeller">
+      <a href="#" class="previousTopSeller"><i class="fa-solid fa-arrow-left"></i></a>
+      <a href="#" class="nextTopSeller"><i class="fa-solid fa-arrow-right"></i></a>
+      <h2>Popular products in PC internationally</h2>
+      <ul style="list-style-type: none;">
+        <li><img src="assets/topSeller2.jpg" alt=""></li>
+        <li><img src="assets/topSeller9.jpg" alt=""></li>
+        <li><img src="assets/topSeller8.jpg" alt=""></li>
+        <li><img src="assets/topSeller1.jpg" alt=""></li>
+        <li><img src="assets/topSeller7.jpg" alt=""></li>
+        <li><img src="assets/topSeller8.jpg" alt=""></li>
+        <li><img src="assets/topSeller1.jpg" alt=""></li>
+        <li><img src="assets/topSeller1.jpg" alt=""></li>
+        <li><img src="assets/topSeller9.jpg" alt=""></li>
+        <li><img src="assets/topSeller4.jpg" alt=""></li>
+      </ul>
+    </div>
+    
+    <!------------------------------------Home and Kitchen Essentials-------------------------------->
+    <div class="itemCards">
+      <div class="card">
+        <h2>New home arrivals under $50</h2>
+        <img src="assets/item13.jpg" alt="" />
+        <a href="#">Discover more in Home</a>
+      </div>
+      <div class="card">
+        <h2>Toys under $25</h2>
+        <img src="assets/item11.jpg" alt="" />
+        <a href="#">Shop gaming</a>
+      </div>
+      <div class="card">
+        <h2>Gifts for Dad under $25</h2>
+        <img src="assets/item8.jpg" alt="" />
+        <a href="#">Explore all products in kitchen</a>
+      </div>
+      <div class="card">
+        <h2>Refresh your space</h2>
+        <img src="assets/item1.jpg" alt="" />
         <a href="#">See all deals</a>
       </div>
     </div>

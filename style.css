@@ -19,6 +19,11 @@ nav{
     align-items: center;
     padding: 12px 22px;
 }
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
 nav .deliveryLocation{
     display: flex;
     justify-content: end;
@@ -163,30 +168,69 @@ nav .deliveryLocation img{
 /*----------------------------------------Item Cards--------------------------------*/
 
 .itemCards{
-    position: absolute;
     display: flex;
     justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: -22%;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     row-gap: 10px;
-    min-width: 0;
-    max-width: 100%;
+    margin: 10px 30px;
 }
 .itemCards a{
     margin-top: 2%;
     text-decoration: none;
     color: rgb(9, 115, 150);
 }
-.card1, .card2, .card3, .card4{
+.card{
     display: flex;
     flex-direction: column;
     gap: 10px;
     flex: 1;
     max-width: 25%;
     margin: 10px;
+    z-index: 1;
     box-sizing: border-box;
     background: white;
     padding: 10px 15px;
+}
+.firstCards{
+    margin-top: -22vw;
+}
+
+/*--------------------------------Top seller---------------------------------------*/
+.topSeller{
+    display: inline-block;
+    margin: 10px 40px;
+    background: white;
+    max-width: 100%;
+    padding: 10px 15px;
+}
+.topSeller ul{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.topSeller a i{
+    position: absolute;
+    margin-top: 80px;
+    font-size: 50px;
+    color: white;
+    box-shadow: 3px 3px 5px black;
+    background: rgb(186, 185, 185);
+    border: none;
+    border-radius: 15px;
+    width: 50px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.previousTopSeller i{
+    left: 40px;
+}
+.nextTopSeller i{
+    right: 40px;
+}
+.topSeller:hover a i{
+    opacity: 1;
+}
+.topSeller h2{
+    margin-bottom: 15px;
 }

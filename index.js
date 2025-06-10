@@ -12,8 +12,19 @@ function slideBackground(){
     bgImages[numImage].style.display = "block";
 }
 slideBackground();
-// Increases the num image when clicked and changes it
-nextImage.addEventListener("click", event =>{
+
+function slideImage(){
+    // Changes the image every 4 seconds automatically
+    setInterval(() =>{
+        slideToNextImage();
+    }, 4000);
+    // Changes the images when the icon is clicked
+    nextImage.addEventListener("click", () =>{
+        slideToNextImage();
+    });
+}
+// Increases the num image when clicked and chages the image
+function slideToNextImage(){
     if(numImage < bgImages.length - 1){
         numImage++;
     }
@@ -21,8 +32,11 @@ nextImage.addEventListener("click", event =>{
         numImage = 0;
     }
     slideBackground();
-});
-// Decreases the num image when clicked and changes it
+}
+
+slideImage();
+
+// Decreases the num image when clicked and changes image
 previousImage.addEventListener("click", event =>{
     if(numImage > 0){
         numImage--;
@@ -31,4 +45,11 @@ previousImage.addEventListener("click", event =>{
        numImage = bgImages.length -1;
     }
     slideBackground();
+});
+
+
+const logo = document.getElementById("logo");
+// Reloads the page when the logo is clicked
+logo.addEventListener("click", () =>{
+    location.reload();
 });
