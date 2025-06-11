@@ -53,3 +53,12 @@ const logo = document.getElementById("logo");
 logo.addEventListener("click", () =>{
     location.reload();
 });
+
+const backToTopBtn = document.getElementById("back-to-top");
+// Scrolls to the top of the page
+function backToTop(){
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
