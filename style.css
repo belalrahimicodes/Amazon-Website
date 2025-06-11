@@ -12,7 +12,7 @@ body{
 }
 /*------------------------------Navbar------------------------------*/
 nav{
-    background-color: rgb(2, 2, 46);
+    background-color: #131921;
     display: flex;
     justify-content: space-between;
     color: white;
@@ -50,7 +50,7 @@ nav .deliveryLocation img{
     background: rgb(186, 186, 186);
     padding: 13px 10px;
     gap: 6px;   
-    color: rgb(59, 58, 58);
+    color: #232f3e;
 }
 .allSearch img{
     width: 10px;
@@ -64,7 +64,7 @@ nav .deliveryLocation img{
 #search-image{
     max-width: 40px;
     padding: 8px 6px;
-    background: rgb(255, 205, 112);
+    background: #f3a847;
     border-radius: 0 3px 3px 0;
 }
 .languageBar{
@@ -235,19 +235,69 @@ nav .deliveryLocation img{
     margin-bottom: 15px;
 }
 /*-------------------------------------Footer------------------------------------------*/
+.footer{
+    background: #232f3e;
+    padding: 100px 100px;
+}
 #back-to-top{
     display: block;
     align-items: center;
     width: 100%;
     padding: 15px;
-    background: rgb(46, 79, 108);
+    background: #485769;
     color: white;
+    border: none;
 }
 .footerTop{
     display: flex;
-    margin-inline: 180px;
-    margin-top: 30px;
+    margin-left: 220px;
     margin-bottom: 40px;
     color: white;
-
+    gap: 70px;
+}
+.footerTop a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.footerTop a:hover{
+    text-decoration: underline;
+}
+.footerTop p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.footerMid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    background: #232f3e;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.footerBoxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px;
+}
+.footerMid a img{
+    margin-right: 80px;
+    margin-top: 15px;
+}
+hr{
+    border: none;
+    height: 1px;
+    color: white;
 }
