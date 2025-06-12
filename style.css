@@ -301,3 +301,51 @@ hr{
     height: 1px;
     color: white;
 }
+.footerBelow{
+    background: #131a22;
+    padding: 100px 100px;
+    color: white;
+}
+.footerBottom{
+    display: flex;
+    gap: 40px;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-inline: 400px;
+}
+.footerBottom p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footerBottom div:hover{
+    text-decoration: underline;
+}
+.footerBottom a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+.footerLastPart{
+    background: #131a22;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    font-size: 0.8rem;
+}
+.footerLastPart a{
+    color: white;
+    text-decoration: none;
+}
+.footerLastPart a:hover{
+    text-decoration: underline;
+}
+.textLastFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #131a22;
+    color: white;
+    font-size: 0.8rem;
+}
