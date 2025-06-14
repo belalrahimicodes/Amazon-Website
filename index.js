@@ -62,3 +62,23 @@ function backToTop(){
         behavior: "smooth"
     });
 }
+
+// Makes scrolling through product images possible
+document.querySelectorAll('.topSeller').forEach(container => {
+  const list = container.querySelector('.topSellerList');
+  const btnPrev = container.querySelector('.previousTopSeller');
+  const btnNext = container.querySelector('.nextTopSeller');
+  const scrollAmount = 200; // number of px to be scrolled
+
+// Scrolls smoothly 200px to the left when the button is clicked
+  btnPrev.addEventListener('click', event => {
+    event.preventDefault();
+    list.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+// Scrolls smoothly 200px to the right when the button is clicked
+  btnNext.addEventListener('click', event => {
+    event.preventDefault();
+    list.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+});
+

@@ -200,13 +200,14 @@ nav .deliveryLocation img{
     display: inline-block;
     margin: 10px 40px;
     background: white;
-    max-width: 100%;
+    max-width: 94%;
     padding: 10px 15px;
 }
 .topSeller ul{
     display: flex;
     justify-items: center;
     align-items: center;
+    overflow-x: hidden;
 }
 .topSeller a i{
     position: absolute;
@@ -226,13 +227,16 @@ nav .deliveryLocation img{
     left: 40px;
 }
 .nextTopSeller i{
-    right: 40px;
+    right: 50px;
 }
 .topSeller:hover a i{
     opacity: 1;
 }
 .topSeller h2{
     margin-bottom: 15px;
+}
+.topSellerList::-webkit-scrollbar{
+    display: none;
 }
 /*-------------------------------------Footer------------------------------------------*/
 .footer{
@@ -247,6 +251,10 @@ nav .deliveryLocation img{
     background: #485769;
     color: white;
     border: none;
+}
+#back-to-top:hover{
+    cursor: pointer;
+    background: #6b7a8d;
 }
 .footerTop{
     display: flex;
@@ -348,4 +356,62 @@ hr{
     background: #131a22;
     color: white;
     font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .footerTop{
+    margin-left: 0;
+    margin-bottom: 20px;
+    gap: 70px;
+    flex-wrap: wrap;
+    }
+    .footerBottom{
+    display: block;
+    margin-inline: 0;
+    }
+    .footerBottom p{
+        margin-bottom: 0px;
+    }
+    .footerBottom div{
+        margin-bottom: 20px;
+    }
+    .footerMid{
+    flex-wrap: wrap;
+    }
+    .footerMid a img{
+    margin-right: 20px;
+    }
+    .navbar{
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+    .searchBar{
+        order: 7;
+        margin: 5px 20px 5px;
+        min-width: 200px;
+    }
+    .itemCards{
+    flex-wrap: wrap;
+    margin: 10px 30px;
+    max-width: 100%;
+    }
+    .card{
+    max-width: 43%;
+    }
+    .topSeller{
+    margin: 10px 40px;
+    max-width: 81%;
+    }
+    .topSeller a i{
+    margin-top: 100px;
+    }
+    .nextTopSeller i{
+    right: 70px;
+    }
+    .menuList h2{
+    margin-right: 10px;
+    }
+    .footerLastPart{
+    flex-wrap: wrap;
+    }
 }
